@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>GALLERY - Rusman Nacikit</title>
+  </head>
+
+  <body>
+    <!-- container -->
+    <div class="container">
+      <!-- Banner Header -->
+      <div class="nama">
+        <img src="banner.png" />
+      </div>
+
+      <!-- Menu -->
+      <div class="navigasi">
+        <ul>
+          <a href="../home/index.html"><li>HOME</li></a>
+          <a href="../profile/index.html"><li>PROFILE</li></a>
+          <a href="#"><li>GALLERY</li></a>
+          <a href="../kontak/index.html"><li>CONTACT</li></a>
+          <a href="../input_nilai/index.html"><li>INPUT NILAI</li></a>
+        </ul>
+      </div>
+
+      <!-- kontainer teks -->
+      <div class="konten">
+        <div class="isi">
+          <!-- animasi text -->
+          <marquee
+            behavior="scroll"
+            width="100%"
+            direction="left"
+            height="70px"
+            scrollamount="15"
+            ><h1>You are the CSS to my HTML</h1>
+          </marquee>
+          <h3>My Gallery</h3>
+        </div>
+      </div>
+
+      <!-- kontainer gambar -->
+      <div class="wraper">
+        <img src="http://unsplash.it/500/600?image=1" />
+        <img src="http://unsplash.it/500/600?image=2" />
+        <img src="http://unsplash.it/500/600?image=3" />
+      </div>
+
+      <!-- kontainer video -->
+      <div class="video" align="center">
+        <video
+          id="video"
+          controls="controls"
+          preload="none"
+          width="600"
+          poster="https://assets.codepen.io/32795/poster.png"
+        >
+          <source
+            id="mp4"
+            src="http://media.w3.org/2010/05/sintel/trailer.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+
+      <!-- kontainer audio -->
+      <div class="audio" align="center">
+        <audio controls preload="metadata">
+          <source
+            src="https://www.w3schools.com/html/horse.ogg"
+            type="audio/mp3"
+          />
+        </audio>
+      </div>
+    </div>
+  </body>
+</html>

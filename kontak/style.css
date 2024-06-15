@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+
+* {
+  /*CSS Reset*/
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("pattern.png"); /*Background image*/
+}
+
+a {
+  text-decoration: none; /*menghilangkan dekorasi teks pada link*/
+  color: white; /*mengganti warna teks pada link*/
+}
+
+.container {
+  width: 960px; /*lebar kontainer*/
+  margin: auto; /*membuat margin secara horizontal secara otomatis*/
+  height: 100%; /*tinggi kontainer*/
+  background-color: #ffe4c4;
+}
+
+.nama img {
+  width: 960px; /*lebar gambar*/
+  height: 300px; /*tinggi gambar*/
+}
+
+.navigasi {
+  height: 50px; /*tinggi navigasi*/
+  background-color: #3498db; /*warna navigasi*/
+  margin-top: -3px; /*mwngatur margin top pada navigasi*/
+}
+
+.navigasi ul li {
+  display: inline-block; /*menampilkan link secara horizontal*/
+  font-size: 13px; /*ukuran font*/
+  color: white; /*mengganti warna teks*/
+  line-height: 50px; /*mengatur tinggi teks*/
+  padding-left: 60px; /*mengatur jarak antara link*/
+  padding-right: 30px; /*mengatur jarak antara link*/
+  margin-left: 30px; /*mengatur jarak antara link*/
+}
+
+.navigasi ul li:hover {
+  background-color: lightblue; /*mengganti warna background saat link disorot*/
+}
+
+.navigasi a:hover {
+  color: black; /*mengganti warna teks saat link disorot*/
+}
+
+.isi h1 {
+  text-align: center; /*menampilkan teks secara horizontal*/
+  margin-top: 20px; /*mengatur jarak antara teks dengan atas*/
+  font-style: italic; /*mengatur font menjadi miring*/
+}
+
+.isi h3 {
+  text-align: center; /*menampilkan teks secara horizontal*/
+  margin-top: 3px; /*mengatur jarak teks bagian atas*/
+  font-style: italic; /*mengatur font menjadi miring*/
+  font-family: "Brush Script MT", cursive; /*mengganti font*/
+  font-size: 35px; /*ukuran font*/
+}
+
+.wrap {
+  width: 100%; /*lebar container*/
+  max-width: 600px; /*lebar maksimal container*/
+  margin: 0px auto; /*mmenegahkan container*/
+}
+
+.contact ul {
+  width: 100%; /*lebar konten*/
+  list-style-type: none; /*menghilangkan dekorasi pada list*/
+  list-style-position: outside; /*meletakkan konten ul diluar dari input*/
+  margin: 0px; /*mengatur jarak margin konten*/
+  padding: 0px; /*mengatur jarak padding  konten*/
+}
+
+.contact ul li input:hover {
+  border: 2px dotted #3498db; /*mengganti warna border saat input disorot*/
+}
+
+.contact ul li textarea:hover {
+  border: 2px dotted #3498db; /*mengganti warna border saat input disorot*/
+}
+
+.contact label {
+  width: 100%; /*lebar label*/
+  display: inline-block; /*menampilkan label secara horizontal*/
+  padding: 3px; /*mengatur jarak padding label*/
+}
+
+.contact input {
+  height: 40px; /*tinggi input*/
+  width: 100%; /*lebar input*/
+  padding: 5px 8px; /*mengatur jarak padding input*/
+  margin-bottom: 20px; /*mengatur jarak bawah input*/
+}
+
+.contact textarea {
+  padding: 8px; /*mengatur jarak padding textarea*/
+  width: 100%; /*lebar textarea*/
+}
+
+.contact input,
+.contact textarea {
+  font-family: segoe ui, verdana, arial, sans-serif; /*mengganti font*/
+  border: 1px solid #aaa; /*mengganti border*/
+  border-radius: 2px; /*membuat box radius pada box input*/
+  padding-right: 30px; /*mengatur jarak padding kanan input*/
+}
+
+button {
+  font-size: 1.1em; /*ukuran font*/
+  display: inline-block; /*menampilkan button secara horizontal*/
+  position: relative; /*menetapkan posisi*/
+  margin-top: 20px; /*mengatur jarak button bagian atas*/
+  margin-right: 10px; /*mengatur jarak button bagian kanan*/
+  margin-bottom: 50px; /*mengatur jarak button bagian bawah*/
+  padding: 2px; /*mengatur jarak padding button*/
+  width: 100px; /*lebar button*/
+  color: #fff; /*mengganti warna teks*/
+  border: 1px solid black; /*mengganti border*/
+  border-radius: 10px;
+  background: #2266ee; /*mengganti warna background button*/
+}
+
+button:hover {
+  background-color: #333; /*mengganti warna background saat button disorot*/
+}
+
+marquee {
+  margin-bottom: 25px;
+}

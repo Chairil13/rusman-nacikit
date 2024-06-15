@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+
+* {
+  /*CSS Reset*/
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("pattern.png"); /*Background image*/
+}
+
+a {
+  text-decoration: none; /*menghilangkan dekorasi teks pada link*/
+  color: white; /*mengganti warna teks pada link*/
+}
+
+.container {
+  width: 960px; /*lebar kontainer*/
+  margin: auto; /*membuat margin secara horizontal secara otomatis*/
+  height: 100%; /*tinggi kontainer*/
+  background-color: #ffe4c4;
+}
+
+.nama img {
+  width: 960px; /*lebar gambar*/
+  height: 300px; /*tinggi gambar*/
+}
+
+.navigasi {
+  height: 50px; /*tinggi navigasi*/
+  background-color: #3498db; /*warna navigasi*/
+  margin-top: -3px; /*mwngatur margin top pada navigasi*/
+}
+
+.navigasi ul li {
+  display: inline-block; /*menampilkan link secara horizontal*/
+  font-size: 13px; /*ukuran font*/
+  color: white; /*mengganti warna teks*/
+  line-height: 50px; /*mengatur tinggi teks*/
+  padding-left: 60px; /*mengatur jarak antara link*/
+  padding-right: 30px; /*mengatur jarak antara link*/
+  margin-left: 30px; /*mengatur jarak antara link*/
+}
+
+.navigasi ul li:hover {
+  background-color: lightblue; /*mengganti warna background saat link disorot*/
+}
+
+.navigasi a:hover {
+  color: black; /*mengganti warna teks saat link disorot*/
+}
+
+.isi h1 {
+  text-align: center; /*menampilkan teks secara horizontal*/
+  margin-top: 20px; /*mengatur jarak antara teks dengan atas*/
+  font-style: italic; /*mengatur font menjadi miring*/
+  font-size: 35px;
+}
+
+.isi h3 {
+  text-align: center; /*menampilkan teks secara horizontal*/
+  margin-top: 50px; /*mengatur jarak antara teks dengan atas*/
+  font-style: italic; /*mengatur font menjadi miring*/
+  font-family: "Brush Script MT", cursive; /*mengganti font*/
+  font-size: 35px; /*ukuran font*/
+}
+
+marquee {
+  margin-top: 20px; /*mengatur jarak antara teks dengan atas*/
+}
+
+/* ========== BAGIAN GAMBAR ========== */
+div.wraper {
+  height: 356px; /*tinggi gambar*/
+  width: 700px; /*lebar gambar*/
+  margin: 2rem auto 0; /*mengatur jarak antara gambar dengan atas*/
+  position: relative; /*membuat posisi gambar secara relatif*/
+}
+
+div.wraper img {
+  position: absolute; /*membuat posisi gambar secara absolut*/
+  left: 200px; /*mengatur gambar dengan ke kiri*/
+  width: 300px; /*lebar gambar*/
+  height: 200px; /*tinggi gambar*/
+  border: 12px solid #ffe; /*mengatur border gambar*/
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2); /*mengatur shadow gambar*/
+  transform-origin: center 400px; /*mengatur posisi gambar*/
+  transition: all 0.6s linear; /*mengatur animasi gambar*/
+}
+
+div.wraper img:first-child {
+  transform: rotate(5deg); /*mengatur rotasi gambar*/
+}
+
+div.wraper img:last-child {
+  transform: rotate(-5deg); /*mengatur rotasi gambar*/
+}
+
+div.wraper:hover img:first-child {
+  transform: rotate(25deg); /*mengatur rotasi gambar*/
+}
+
+div.wraper:hover img:last-child {
+  transform: rotate(-25deg); /*mengatur rotasi gambar*/
+}
+
+.audio {
+  margin-top: 50px; /*mengatur jarak bagian atas*/
+}
+
+audio:hover,
+audio:focus,
+audio:active {
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4); /*mengatur shadow audio saat disorot*/
+  transform: scale(1.05); /*mengatur skala audio saat disorot*/
+}
